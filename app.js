@@ -4,7 +4,7 @@
 angular.module("LunchCheck",[])
 .controller("LunchCheckController",myController);
 
-myController.$injector = ['%scope'];
+myController.$injector = ['$scope'];
 
 function myController($scope){
 
