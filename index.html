@@ -5,7 +5,12 @@
         <script src="angular.min.js"></script>
         <script src="app.js"></script>
     </head>
-    <body>
-        <div>Hello World!</div>
+    <body ng-app="LunchCheck">
+        <div ng-controller="LunchCheckController">
+            <div class="top">Enter the Luch Box items below :</div>
+            <div class="mid"><input ng-model="fooditems"></div>
+            <div class="end"><button type="submit" ng-click="checkItems()">Lunch Check</button></div>
+            <div class="msg">{{message}}</div>
+        </div>
     </body>
 </html>
