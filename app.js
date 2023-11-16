@@ -1,9 +1,10 @@
 (function(){
+'use strict';
 
 angular.module("LunchCheck",[])
 .controller("LunchCheckController",myController);
 
-myController.$inject = ['%scope'];
+myController.$injector = ['%scope'];
 
 function myController($scope){
 
